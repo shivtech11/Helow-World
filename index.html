@@ -57,25 +57,26 @@
         }
     </style-->
 </head>
-
-<body>
-    <!--Header-->
-  <header class="masthead mb-auto">
-    <div class="inner">
-    <h3 class="masthead-brand"> WnC coUnt APP</h3>
-    </div>
-  </header>
   
-<main role="main" class="inner cover">
-  <h1 class="cover-heading">Welcome to the Word & Charaters count app !!</h1>      
-  <p class="lead">Using HTML CSS JavaScript</p>
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h5 class="masthead-brand">COUNTER</h5>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h2 class="cover-heading">Welcome to the Word & Charaters count app !!</h2>
+         <p class="lead">Using HTML CSS JavaScript</p>
   <br>
-        <textarea id="words" cols="50" rows="10"></textarea>
+        <textarea id="words" cols="40" rows="10"></textarea>
         <br>
         <p id="shownoc"></p>
         <p id="shownow"></p>
         <br>
-        <button  onclick="countWords()"> Count </button>
+        <button class="btn btn-lg btn-secondary" onclick="countWords()"> Count </button>
     </main>
 
     <!--Footer-->
@@ -93,11 +94,11 @@
             now = now.length + 1;
             document.getElementById('shownow').innerHTML = "The total Words = " + now;
         };
+      
     </script>
+   </body>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
-
 </html>
